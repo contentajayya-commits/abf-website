@@ -1158,6 +1158,126 @@ footer {
 
 /* Selection */
 ::selection { background: var(--teal); color: var(--white); }
+
+/* ============================================================
+   FORD-RHYTHM HOME v2 — all classes .fd-* (no collisions).
+   ============================================================ */
+:root{ --pale-blue:#EAF2FA; --pale-mint:#E6F4EF; --pale-peach:#FBEDE4; }
+
+.fd-serif-xl{font-family:var(--ff-display);font-size:4.6rem;font-weight:600;color:var(--navy);line-height:1.03;letter-spacing:-0.01em}
+.fd-serif-lg{font-family:var(--ff-display);font-size:3.2rem;font-weight:600;color:var(--navy);line-height:1.08}
+.fd-eyebrow{font-family:var(--ff-mono);font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.4rem;display:block}
+.fd-sub{font-size:1.05rem;color:var(--slate);line-height:1.7;max-width:32rem}
+.fd-btn{display:inline-block;font-family:var(--ff-body);font-size:0.92rem;font-weight:600;color:var(--navy);padding:1rem 2rem;border:1.5px solid var(--navy);border-radius:2px;background:transparent;cursor:pointer;transition:all .3s var(--transition);letter-spacing:0.02em}
+.fd-btn:hover{background:var(--navy);color:var(--white)}
+.fd-btn.solid{background:var(--teal);border-color:var(--teal);color:var(--white)}
+.fd-btn.solid:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.fd-tag{font-family:var(--ff-mono);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);margin-bottom:0.9rem;display:block}
+
+/* hero actions + stats */
+.fd-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.fd-stats{display:grid;grid-template-columns:repeat(4,auto);gap:2.5rem;margin-top:3.5rem;justify-content:start}
+.fd-stat-num{font-family:var(--ff-display);font-size:1.9rem;font-weight:700;color:var(--gold);line-height:1}
+.fd-stat-lbl{font-family:var(--ff-mono);font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-top:0.4rem}
+
+/* photo placeholder frames */
+.fd-pf{position:relative;background:linear-gradient(150deg,var(--navy-mid),var(--navy));border-radius:2px;overflow:hidden;box-shadow:0 18px 44px rgba(9,26,56,0.20)}
+.fd-pf::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 18px,rgba(11,165,160,0.06) 18px,rgba(11,165,160,0.06) 36px)}
+.fd-pf .fd-note{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--ff-mono);font-size:0.6rem;letter-spacing:0.1em;color:rgba(226,201,122,0.55);text-align:center;width:82%;line-height:1.5;z-index:1}
+.fd-pf.teal{background:linear-gradient(150deg,var(--teal-dark),var(--navy-mid))}
+
+/* HERO */
+.fd-hero{padding:4rem 0 5rem;background:var(--white)}
+.fd-hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:2rem;align-items:center}
+.fd-collage{position:relative;height:540px}
+.fd-collage .fd-pale{position:absolute;top:16px;right:-30px;width:80%;height:88%;background:var(--pale-blue);border-radius:2px}
+.fd-collage .fd-pf{position:absolute}
+.fd-c1{top:0;right:2%;width:52%;height:56%;z-index:2}
+.fd-c2{bottom:6%;left:0;width:41%;height:45%;z-index:3;transform:rotate(-3deg)}
+.fd-c3{bottom:0;right:6%;width:50%;height:46%;z-index:2}
+
+/* STATEMENT BLOCKS */
+.fd-stmt{padding:5rem 0;background:var(--white)}
+.fd-stmt .fd-inner{max-width:1240px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.fd-stmt.photo-left .fd-txt{order:2}
+.fd-stmt.photo-left .fd-art{order:1}
+.fd-stmt-collage{position:relative;height:440px}
+.fd-stmt-collage .fd-pale{position:absolute;border-radius:2px}
+.fd-stmt .fd-pf{position:absolute}
+.fd-mint .fd-pale{background:var(--pale-mint)}
+.fd-peach .fd-pale{background:var(--pale-peach)}
+.fd-va .fd-pale{top:0;left:0;width:60%;height:82%}
+.fd-va .fd-p1{top:8%;left:8%;width:46%;height:78%;z-index:2}
+.fd-va .fd-p2{top:2%;right:6%;width:44%;height:52%;z-index:3;transform:rotate(2deg)}
+.fd-va .fd-p3{bottom:0;right:0;width:40%;height:40%;z-index:3}
+.fd-vb .fd-pale{top:0;right:0;width:38%;height:100%}
+.fd-vb .fd-p1{top:6%;right:4%;width:52%;height:60%;z-index:2}
+.fd-vb .fd-p2{top:0;left:0;width:44%;height:74%;z-index:3}
+.fd-vb .fd-p3{bottom:4%;right:14%;width:40%;height:40%;z-index:4;transform:rotate(-2deg)}
+
+/* founder quote card + bullets */
+.fd-quote-card{position:relative;min-height:400px;display:flex;align-items:center;border-radius:var(--radius-md);background:linear-gradient(150deg,var(--navy-mid),var(--navy));overflow:hidden;box-shadow:var(--shadow-md)}
+.fd-quote-card::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(11,165,160,0.05) 20px,rgba(11,165,160,0.05) 40px)}
+.fd-quote{font-family:var(--ff-display);font-size:1.4rem;font-style:italic;color:var(--white);line-height:1.55;text-align:center;padding:3rem 2.5rem;position:relative;z-index:1}
+.fd-quote-attr{font-family:var(--ff-mono);font-size:0.66rem;font-style:normal;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal-light);margin-top:1.6rem;display:block}
+.fd-bullets{list-style:none;margin:1.6rem 0 0;padding:0}
+.fd-bullets li{position:relative;padding-left:1.3rem;margin-bottom:0.7rem;font-size:0.95rem;color:var(--slate);line-height:1.6}
+.fd-bullets li::before{content:'';position:absolute;left:0;top:0.55rem;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+
+/* PRIORITY GRID (Six Pillars) */
+.fd-priorities{padding:6rem 0;background:var(--gold-pale)}
+.fd-priorities .fd-intro{max-width:40rem;margin-bottom:3rem}
+.fd-pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.fd-pcard{cursor:pointer;transition:transform .35s var(--transition)}
+.fd-pcard:hover{transform:translateY(-5px)}
+.fd-pcard .fd-pimg{aspect-ratio:4/3;border-radius:2px;overflow:hidden;margin-bottom:1rem;position:relative;background:linear-gradient(150deg,var(--navy-light),var(--navy))}
+.fd-pcard:nth-child(3n-1) .fd-pimg{background:linear-gradient(150deg,var(--teal-dark),var(--navy-mid))}
+.fd-pcard:nth-child(3n) .fd-pimg{background:linear-gradient(150deg,var(--navy-mid),var(--black))}
+.fd-pcard .fd-pimg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 16px,rgba(255,255,255,0.04) 16px,rgba(255,255,255,0.04) 32px)}
+.fd-pcard .fd-pimg .fd-note{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--ff-mono);font-size:0.58rem;letter-spacing:0.1em;color:rgba(226,201,122,0.55);text-align:center;width:80%;z-index:1}
+.fd-pcard .fd-pnum{font-family:var(--ff-mono);font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.fd-pcard .fd-pname{font-family:var(--ff-display);font-size:1.45rem;font-weight:600;color:var(--navy);line-height:1.2;transition:color .3s}
+.fd-pcard:hover .fd-pname{color:var(--teal-dark)}
+.fd-pcard .fd-pdesc{font-size:0.85rem;color:var(--slate);line-height:1.55;margin-top:0.5rem}
+
+/* FEED */
+.fd-feed{padding:6rem 0;background:var(--white)}
+.fd-feed-head{margin-bottom:3rem}
+.fd-fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.fd-fcard{cursor:pointer;transition:transform .35s var(--transition)}
+.fd-fcard:hover{transform:translateY(-5px)}
+.fd-fcard .fd-fimg{aspect-ratio:3/2;border-radius:2px;overflow:hidden;margin-bottom:1rem;position:relative;background:linear-gradient(150deg,var(--navy-mid),var(--navy))}
+.fd-fcard .fd-fimg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 16px,rgba(11,165,160,0.06) 16px,rgba(11,165,160,0.06) 32px)}
+.fd-fcard .fd-fimg .fd-note{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--ff-mono);font-size:0.58rem;letter-spacing:0.12em;color:rgba(226,201,122,0.55);text-transform:uppercase;z-index:1}
+.fd-fcard .fd-fcat{font-family:var(--ff-mono);font-size:0.64rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.fd-fcard .fd-ftitle{font-family:var(--ff-display);font-size:1.35rem;font-weight:600;color:var(--navy);line-height:1.2;margin-bottom:0.5rem}
+.fd-fcard .fd-fex{font-size:0.86rem;color:var(--slate);line-height:1.6}
+.fd-fcard .fd-fmeta{margin-top:0.8rem;font-size:0.76rem;color:var(--muted)}
+.fd-feed-btn{text-align:center;margin-top:3rem}
+
+/* TALKS & MEDIA */
+.fd-talks{padding:6rem 0;background:var(--navy);position:relative;overflow:hidden}
+.fd-talks::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 24px,rgba(255,255,255,0.02) 24px,rgba(255,255,255,0.02) 48px)}
+.fd-talks .container{position:relative;z-index:1}
+.fd-talks .fd-tag{color:var(--teal-light)}
+.fd-talks h2{font-family:var(--ff-display);font-size:3rem;font-weight:600;color:var(--white);line-height:1.1;margin-bottom:2.5rem}
+.fd-tgrid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.fd-tcard{display:block;text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-md);padding:2rem;transition:all .35s var(--transition)}
+.fd-tcard:hover{background:rgba(255,255,255,0.08);border-color:var(--teal);transform:translateY(-4px)}
+.fd-tcard .fd-tkind{font-family:var(--ff-mono);font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.fd-tcard .fd-ttitle{font-family:var(--ff-display);font-size:1.6rem;font-weight:600;color:var(--white);line-height:1.25;margin-bottom:0.7rem}
+.fd-tcard .fd-tdesc{font-size:0.9rem;color:rgba(255,255,255,0.72);line-height:1.6}
+.fd-tcard .fd-tlink{margin-top:1.2rem;font-family:var(--ff-mono);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal-light)}
+
+@media(max-width:900px){
+  .fd-hero-grid,.fd-stmt .fd-inner{grid-template-columns:1fr;gap:2.5rem}
+  .fd-stmt.photo-left .fd-txt,.fd-stmt.photo-left .fd-art{order:unset}
+  .fd-serif-xl{font-size:3rem}
+  .fd-serif-lg{font-size:2.2rem}
+  .fd-collage,.fd-stmt-collage{height:360px}
+  .fd-pgrid,.fd-fgrid,.fd-tgrid{grid-template-columns:1fr}
+  .fd-stats{grid-template-columns:repeat(2,auto);gap:1.5rem}
+}
 </style>
 </head>
 <body>
@@ -1173,13 +1293,7 @@ footer {
 
     <ul class="nav-links">
       <li><span class="nav-link" onclick="showPage('home')">Home</span></li>
-      <li><span class="nav-link" onclick="showPage('analysis')">Analysis</span></li>
-      <li><span class="nav-link" onclick="showPage('writings')">Writings</span></li>
-      <li><span class="nav-link" onclick="showPage('podcast')">Podcast</span></li>
-      <li><span class="nav-link" onclick="showPage('events')">Events</span></li>
       <li><span class="nav-link" onclick="showPage('ifl')">India Future Labs</span></li>
-      <li><span class="nav-link" onclick="showPage('about')">About</span></li>
-      <li><span class="nav-link" onclick="showPage('contact')">Contact</span></li>
     </ul>
     <span class="nav-cta" onclick="showPage('membership')">Become a Member</span>
 
@@ -1192,13 +1306,7 @@ footer {
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <span class="nav-link" onclick="showPage('home');toggleMenu()">Home</span>
-  <span class="nav-link" onclick="showPage('analysis');toggleMenu()">Analysis</span>
-  <span class="nav-link" onclick="showPage('writings');toggleMenu()">Writings</span>
-  <span class="nav-link" onclick="showPage('podcast');toggleMenu()">Podcast</span>
-  <span class="nav-link" onclick="showPage('events');toggleMenu()">Events</span>
   <span class="nav-link" onclick="showPage('ifl');toggleMenu()">India Future Labs</span>
-  <span class="nav-link" onclick="showPage('about');toggleMenu()">About</span>
-  <span class="nav-link" onclick="showPage('contact');toggleMenu()">Contact</span>
   <span class="nav-cta" onclick="showPage('membership');toggleMenu()">Become a Member</span>
 </div>
 
@@ -1208,232 +1316,153 @@ footer {
      ════════════════════════════════════════════════════════════ -->
 <div id="page-home" class="page active">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg-pattern"></div>
-    <div class="hero-grid-lines"></div>
-    <div class="hero-diagonal"></div>
-    <div class="hero-accent-line"></div>
-    <div class="hero-number">$5T</div>
-
-    <div class="hero-content container">
-      <div class="hero-eyebrow">Ajayyabharathy Foundation · Est. New Delhi</div>
-
-      <h1 class="hero-headline fade-in">
-        Ideas That Forge<br>
-        <em>India's Future</em>
-      </h1>
-
-      <p class="hero-desc fade-in fade-in-delay-1">
-        An independent institution of thought leadership, rigorous research, and visionary policy thinking — charting India's course to a <strong style="color:var(--teal-light)">$5 trillion economy</strong> and a developed nation by 2047.
-      </p>
-
-      <div class="hero-actions fade-in fade-in-delay-2">
-        <button class="btn-primary" onclick="showPage('ifl')">
-          Explore India Future Labs
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-        <button class="btn-ghost-white" onclick="showPage('writings')">Read Our Research</button>
-      </div>
-
-      <div class="hero-stats fade-in fade-in-delay-3">
-        <div class="stat-item">
-          <div class="stat-number">$5T</div>
-          <div class="stat-label">Economy Target</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">2047</div>
-          <div class="stat-label">Viksit Bharat Vision</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">12+</div>
-          <div class="stat-label">Focus Domains</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Editorially Independent</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span>Science & Technology</span><span>Artificial Intelligence</span><span>Infrastructure</span>
-      <span>Art & Literature</span><span>Sports</span><span>Healthcare</span><span>Education</span>
-      <span>Business & Economy</span><span>International Policy</span><span>Climate & Sustainability</span>
-      <span>Governance & Democracy</span><span>Science & Technology</span><span>Artificial Intelligence</span>
-      <span>Infrastructure</span><span>Art & Literature</span><span>Sports</span><span>Healthcare</span>
-      <span>Education</span><span>Business & Economy</span><span>International Policy</span>
-    </div>
-  </div>
-
-  <!-- ABOUT SNIPPET -->
-  <section class="about-strip">
+<!-- ===== FORD HERO ===== -->
+  <section class="fd-hero">
     <div class="container">
-      <div class="about-strip-inner">
-        <div class="about-strip-visual fade-in">
-          <div class="about-visual-main">
-            <div class="about-visual-quote">
-              <blockquote>"India's greatness will not be measured only by its GDP — but by the quality of its children's dreams and the dignity of its last citizen."</blockquote>
-              <cite>— Dr. Ajayya Kumar, Founder</cite>
-            </div>
-          </div>
-          <div class="about-strip-badge">
-            <span class="badge-num">21st</span>
-            <span class="badge-text">Century Think Tank</span>
-          </div>
-        </div>
-
-        <div class="about-strip-text fade-in fade-in-delay-1">
-          <div class="section-tag">Who We Are</div>
-          <h2 class="section-heading">A Platform for <em>Bold, Independent Ideas</em></h2>
-          <p class="section-subtext">
-            The Ajayyabharathy Foundation takes its name from two sources of profound meaning: <em>Ajayya</em>, drawn from the name of founder Dr. Ajayya Kumar, and <em>Bharathi</em>, his mother — a schoolteacher who dedicated her life to educating thousands of children. The Foundation was initiated in her memory, as a tribute to her legacy and to the motherland, Bharat.
-          </p>
-          <p class="section-subtext" style="margin-top:0.8rem">
-            It is Dr. Ajayya Kumar's most personal and most purposeful institution — a 21st-century ideas platform dedicated to generating independent research, inspiring debate, and building the intellectual architecture of a Viksit Bharat by 2047.
-          </p>
-
-          <ul class="about-pillar-list" style="margin-top:1.5rem">
-            <li class="about-pillar-item"><span class="pillar-dot"></span> Editorially independent — free from political or corporate bias</li>
-            <li class="about-pillar-item"><span class="pillar-dot"></span> Multidisciplinary thinking across 12+ policy and innovation domains</li>
-            <li class="about-pillar-item"><span class="pillar-dot"></span> Engaging decision-makers, parliamentarians, students &amp; bureaucrats</li>
-            <li class="about-pillar-item"><span class="pillar-dot"></span> Passionately committed to a Viksit Bharat by 2047</li>
-          </ul>
-
-          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-            <button class="btn-primary" onclick="showPage('about')">Our Story &amp; Mission</button>
-            <button class="btn-outline" onclick="showPage('ifl')">India Future Labs</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOCUS AREAS -->
-  <section class="focus-areas">
-    <div class="container">
-      <div class="section-header">
+      <div class="fd-hero-grid">
         <div>
-          <div class="section-tag">Domains of Inquiry</div>
-          <h2 class="section-heading">Where We Focus Our <em>Thinking</em></h2>
-        </div>
-      </div>
-      <div class="areas-grid">
-        <div class="area-card fade-in"><div class="area-icon">🔬</div><div class="area-name">Science &amp; Technology</div></div>
-        <div class="area-card fade-in fade-in-delay-1"><div class="area-icon">🤖</div><div class="area-name">Artificial Intelligence</div></div>
-        <div class="area-card fade-in fade-in-delay-2"><div class="area-icon">🏗️</div><div class="area-name">Infrastructure</div></div>
-        <div class="area-card fade-in fade-in-delay-3"><div class="area-icon">🎨</div><div class="area-name">Art &amp; Literature</div></div>
-        <div class="area-card fade-in fade-in-delay-4"><div class="area-icon">🏅</div><div class="area-name">Sports &amp; Soft Power</div></div>
-        <div class="area-card fade-in"><div class="area-icon">🏥</div><div class="area-name">Healthcare</div></div>
-        <div class="area-card fade-in fade-in-delay-1"><div class="area-icon">📚</div><div class="area-name">Education</div></div>
-        <div class="area-card fade-in fade-in-delay-2"><div class="area-icon">💼</div><div class="area-name">Business &amp; Economy</div></div>
-        <div class="area-card fade-in fade-in-delay-3"><div class="area-icon">🌐</div><div class="area-name">International Policy</div></div>
-        <div class="area-card fade-in fade-in-delay-4"><div class="area-icon">🌱</div><div class="area-name">Climate &amp; Sustainability</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED WRITINGS -->
-  <section class="featured-section" style="background:var(--cream)">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-tag">Featured Writing</div>
-          <h2 class="section-heading">Ideas From Our <em>Thinkers</em></h2>
-        </div>
-        <span class="view-all" onclick="showPage('writings')">All Writings →</span>
-      </div>
-      <div class="writings-featured">
-        <!-- Lead article -->
-        <div class="card writing-lead fade-in">
-          <div class="card-img-placeholder" style="aspect-ratio:16/8">
-            <span>Featured Essay</span>
+          <span class="fd-eyebrow">Ajayyabharathy Foundation &middot; Est. New Delhi</span>
+          <h1 class="fd-serif-xl">Ideas That Forge India's Future</h1>
+          <p class="fd-sub" style="margin-top:1.8rem">An independent institution of thought leadership, rigorous research, and visionary policy thinking &mdash; charting India's course to a $5 trillion economy and a developed nation by 2047.</p>
+          <div class="fd-actions">
+            <button class="fd-btn solid" onclick="showPage('ifl')">Explore India Future Labs</button>
+            <button class="fd-btn" onclick="showPage('analysis')">Read Our Research</button>
           </div>
-          <div class="card-body">
-            <div class="card-category">Economy · Long Read</div>
-            <div class="card-title" style="font-size:1.7rem">The Strait of Hormuz: India's Strategic Achilles Heel and the Path to Energy Sovereignty</div>
-            <div class="card-excerpt">The Strait of Hormuz — barely 33 km wide — controls 21% of global petroleum liquids. India imports over 85% of its crude. Any disruption could send inflation soaring and the $5 trillion target into jeopardy. This essay examines India's strategic response, from renewable energy to maritime corridors.</div>
-            <div class="card-meta">
-              <span>Ajayyabharathy Foundation · April 2026</span>
-              <span class="card-read-more" onclick="showPage('writings')" style="cursor:pointer">Read Essay →</span>
-            </div>
+          <div class="fd-stats">
+            <div class="fd-stat"><div class="fd-stat-num">$5T</div><div class="fd-stat-lbl">Economy Target</div></div>
+            <div class="fd-stat"><div class="fd-stat-num">2047</div><div class="fd-stat-lbl">Viksit Bharat Vision</div></div>
+            <div class="fd-stat"><div class="fd-stat-num">12+</div><div class="fd-stat-lbl">Focus Domains</div></div>
+            <div class="fd-stat"><div class="fd-stat-num">100%</div><div class="fd-stat-lbl">Editorially Independent</div></div>
           </div>
         </div>
-        <!-- Side cards -->
-        <div class="card fade-in fade-in-delay-1">
-          <div class="card-img-placeholder"><span>Essay</span></div>
-          <div class="card-body">
-            <div class="card-category">Technology · Essay</div>
-            <div class="card-title">AI and India: Seizing a Once-in-a-Generation Opportunity</div>
-            <div class="card-excerpt">The IndiaAI Mission with ₹10,372 crore could add $967 billion to GDP by 2035. Why execution must match the scale of ambition.</div>
-            <div class="card-meta">
-              <span>March 2026</span>
-              <span class="card-read-more" onclick="showPage('writings')" style="cursor:pointer">Read →</span>
-            </div>
-          </div>
-        </div>
-        <div class="card fade-in fade-in-delay-2">
-          <div class="card-img-placeholder"><span>Essay</span></div>
-          <div class="card-body">
-            <div class="card-category">Society · Essay</div>
-            <div class="card-title">Great Parents, Great India: Parenting as a National Development Strategy</div>
-            <div class="card-excerpt">90% of critical brain development happens before age five. India's demographic dividend depends on who is raising the next generation — and how.</div>
-            <div class="card-meta">
-              <span>Dr. Ajayya Kumar · February 2026</span>
-              <span class="card-read-more" onclick="showPage('writings')" style="cursor:pointer">Read →</span>
-            </div>
-          </div>
+        <div class="fd-collage">
+          <div class="fd-pale"></div>
+          <div class="fd-pf fd-c1"><div class="fd-note">PHOTO<br>Event / keynote</div></div>
+          <div class="fd-pf fd-c2"><div class="fd-note">PHOTO<br>Arts / performance</div></div>
+          <div class="fd-pf teal fd-c3"><div class="fd-note">PHOTO<br>Architecture</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ANALYSIS SECTION -->
-  <section class="featured-section dark">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-tag" style="color:var(--teal-light)">Policy Analysis</div>
-          <h2 class="section-heading" style="color:var(--white)">Research &amp; <em>Analysis</em></h2>
+  <!-- ===== WHO WE ARE ===== -->
+  <section class="fd-stmt fd-mint photo-left">
+    <div class="fd-inner">
+      <div class="fd-txt">
+        <span class="fd-eyebrow">Who We Are</span>
+        <h2 class="fd-serif-lg">A Platform for Bold, Independent Ideas</h2>
+        <p class="fd-sub" style="margin-top:1.4rem">The Ajayyabharathy Foundation takes its name from two sources of profound meaning: <em>Ajayya</em>, drawn from the name of founder Dr Ajayya Kumar, and <em>Bharathi</em>, his mother &mdash; a schoolteacher who dedicated her life to educating thousands of children. The Foundation was initiated in her memory, as a tribute to her legacy and to the motherland, Bharat.</p>
+        <p class="fd-sub" style="margin-top:1rem">It is Dr Ajayya Kumar's most personal and most purposeful institution &mdash; a 21st-century ideas platform dedicated to generating independent research, inspiring debate, and building the intellectual architecture of a Viksit Bharat by 2047.</p>
+        <ul class="fd-bullets">
+          <li>Editorially independent &mdash; free from political or corporate bias</li>
+          <li>Multidisciplinary thinking across 12+ policy and innovation domains</li>
+          <li>Engaging decision-makers, parliamentarians, students &amp; bureaucrats</li>
+          <li>Passionately committed to a Viksit Bharat by 2047</li>
+        </ul>
+        <div class="fd-actions">
+          <button class="fd-btn solid" onclick="showPage('about')">Our Story &amp; Mission</button>
+          <button class="fd-btn" onclick="showPage('ifl')">India Future Labs</button>
         </div>
-        <span class="view-all" onclick="showPage('analysis')" style="color:var(--teal-light)">All Analysis →</span>
       </div>
-      <div class="grid-3">
-        <div class="card fade-in">
-          <div class="card-img-placeholder" style="background:linear-gradient(135deg,var(--navy-mid),var(--navy))"><span>Digital Economy</span></div>
-          <div class="card-body">
-            <div class="card-category">Digital Economy · Deep Analysis</div>
-            <div class="card-title">India's Digital Payments Revolution: From UPI to Financial Inclusion</div>
-            <div class="card-excerpt">13.4 billion UPI transactions in a single month. How India built the world's most ambitious financial inclusion infrastructure — and where it goes next.</div>
-            <div class="card-meta"><span>January 2026</span><span class="card-read-more" onclick="showPage('analysis')" style="cursor:pointer">Read →</span></div>
-          </div>
+      <div class="fd-art">
+        <div class="fd-quote-card">
+          <div class="fd-quote">"India's greatness will not be measured only by its GDP &mdash; but by the quality of its children's dreams and the dignity of its last citizen."<span class="fd-quote-attr">&mdash; Dr Ajayya Kumar, Founder</span></div>
         </div>
-        <div class="card fade-in fade-in-delay-1">
-          <div class="card-img-placeholder" style="background:linear-gradient(135deg,var(--navy-mid),var(--navy))"><span>Foreign Policy</span></div>
-          <div class="card-body">
-            <div class="card-category">Foreign Policy · Deep Analysis</div>
-            <div class="card-title">India's Foreign Policy as a Development Instrument: The Strategic Dividend</div>
-            <div class="card-excerpt">IMEC, FTAs, semiconductor diplomacy — how India's foreign policy is now explicitly engineered to deliver domestic economic dividends.</div>
-            <div class="card-meta"><span>February 2026</span><span class="card-read-more" onclick="showPage('analysis')" style="cursor:pointer">Read →</span></div>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR PURPOSE ===== -->
+  <section class="fd-stmt fd-peach">
+    <div class="fd-inner">
+      <div class="fd-txt">
+        <span class="fd-eyebrow">Our Purpose</span>
+        <h2 class="fd-serif-lg">Ideas that stay with the question</h2>
+        <p class="fd-sub" style="margin-top:1.4rem">National growth is not built by aspiration alone. It is built by institutions, frameworks, research, and public conversations that stay with the question long after attention has moved elsewhere.</p>
+        <div class="fd-actions"><button class="fd-btn" onclick="showPage('about')">Who We Are</button></div>
+      </div>
+      <div class="fd-art fd-vb">
+        <div class="fd-stmt-collage">
+          <div class="fd-pale"></div>
+          <div class="fd-pf fd-p1"><div class="fd-note">PHOTO &mdash; roundtable</div></div>
+          <div class="fd-pf teal fd-p2"><div class="fd-note">PHOTO &mdash; speaker</div></div>
+          <div class="fd-pf fd-p3"><div class="fd-note">PHOTO &mdash; detail</div></div>
         </div>
-        <div class="card fade-in fade-in-delay-2">
-          <div class="card-img-placeholder" style="background:linear-gradient(135deg,var(--navy-mid),var(--navy))"><span>Startups</span></div>
-          <div class="card-body">
-            <div class="card-category">Startups · Deep Analysis</div>
-            <div class="card-title">India's Startup Ecosystem: Direction, Depth, and the Road Ahead</div>
-            <div class="card-excerpt">1.17 lakh startups, 113 unicorns — but less than 5% in deep tech. A rigorous assessment of where India's startup story must evolve.</div>
-            <div class="card-meta"><span>December 2025</span><span class="card-read-more" onclick="showPage('analysis')" style="cursor:pointer">Read →</span></div>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIX PILLARS ===== -->
+  <section class="fd-priorities">
+    <div class="container">
+      <div class="fd-intro">
+        <span class="fd-tag">Six Pillars of Inquiry</span>
+        <h2 class="fd-serif-lg">Six Foundational Research Programmes</h2>
+        <p class="fd-sub" style="margin-top:1rem;max-width:38rem">India Future Labs is organised around six foundational research programmes. Fellows are assigned to one programme per cohort.</p>
+      </div>
+      <div class="fd-pgrid">
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">01 / Programme</div><div class="fd-pname">Economic Architecture for the $5 Trillion India</div><div class="fd-pdesc">Fiscal policy, industrial strategy, trade architecture, financial inclusion, and the institutional reforms required to sustain 8%+ GDP growth.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">02 / Programme</div><div class="fd-pname">Technology Sovereignty &amp; Digital Futures</div><div class="fd-pdesc">AI governance, semiconductor strategy, digital public infrastructure, and cyber sovereignty &mdash; India's technology imperatives for the next two decades.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">03 / Programme</div><div class="fd-pname">Human Capital: Education, Health &amp; Skills</div><div class="fd-pdesc">The education reforms, healthcare architectures, and skills pipelines needed to fully realise India's greatest asset &mdash; its people.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">04 / Programme</div><div class="fd-pname">Infrastructure, Urbanisation &amp; Climate Resilience</div><div class="fd-pdesc">India's cities will house 800 million people by 2050. Designing the physical and institutional infrastructure to make that urbanisation a strength.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">05 / Programme</div><div class="fd-pname">India's Global Role: Foreign Policy &amp; Soft Power</div><div class="fd-pdesc">Deploying civilisational heritage, democratic values, and strategic location to lead in a multipolar world. A programme for those who think in decades.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">06 / Programme</div><div class="fd-pname">Cultural Renaissance: Art, Sport &amp; National Identity</div><div class="fd-pdesc">A developed nation is not defined by GDP alone. The cultural, artistic, and sporting renaissance that must accompany India's economic rise.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST THINKING ===== -->
+  <section class="fd-feed">
+    <div class="container">
+      <div class="fd-feed-head">
+        <span class="fd-tag">Latest Thinking</span>
+        <h2 class="fd-serif-lg">Ideas From Our Thinkers</h2>
+      </div>
+      <div class="fd-fgrid">
+        <div class="fd-fcard" onclick="showPage('writings')">
+          <div class="fd-fimg"><div class="fd-note">Essay</div></div>
+          <div class="fd-fcat">Economy &middot; Long Read</div>
+          <div class="fd-ftitle">The Strait of Hormuz: India's Strategic Achilles Heel and the Path to Energy Sovereignty</div>
+          <div class="fd-fex">The Strait of Hormuz &mdash; barely 33 km wide &mdash; controls 21% of global petroleum liquids. India imports over 85% of its crude. This essay examines India's strategic response.</div>
+          <div class="fd-fmeta">Ajayyabharathy Foundation &middot; April 2026</div>
         </div>
+        <div class="fd-fcard" onclick="showPage('writings')">
+          <div class="fd-fimg"><div class="fd-note">Essay</div></div>
+          <div class="fd-fcat">Technology &middot; Essay</div>
+          <div class="fd-ftitle">AI and India: Seizing a Once-in-a-Generation Opportunity</div>
+          <div class="fd-fex">The IndiaAI Mission with &#8377;10,372 crore could add $967 billion to GDP by 2035. Why execution must match the scale of ambition.</div>
+          <div class="fd-fmeta">March 2026</div>
+        </div>
+        <div class="fd-fcard" onclick="showPage('writings')">
+          <div class="fd-fimg"><div class="fd-note">Essay</div></div>
+          <div class="fd-fcat">Society &middot; Essay</div>
+          <div class="fd-ftitle">Great Parents, Great India: Parenting as a National Development Strategy</div>
+          <div class="fd-fex">90% of critical brain development happens before age five. India's demographic dividend depends on who is raising the next generation &mdash; and how.</div>
+          <div class="fd-fmeta">Dr Ajayya Kumar &middot; February 2026</div>
+        </div>
+      </div>
+      <div class="fd-feed-btn"><button class="fd-btn" onclick="showPage('writings')">Discover More Writing</button></div>
+    </div>
+  </section>
+
+  <!-- ===== TALKS & MEDIA ===== -->
+  <section class="fd-talks">
+    <div class="container">
+      <span class="fd-tag">Talks &amp; Media</span>
+      <h2>Ideas in the Public Square</h2>
+      <div class="fd-tgrid">
+        <a class="fd-tcard" href="https://youtube.com/playlist?list=PLzUPevAYa_CAcNIpIs4KPvreHU26WI_sd" target="_blank" rel="noopener">
+          <div class="fd-tkind">Master Class &middot; CBSE Skill Unit</div>
+          <div class="fd-ttitle">The Continuous Pursuit of Parenting</div>
+          <div class="fd-tdesc">A 10-part master class on mindful parenting by Dr Ajayya Kumar, collectively surpassing one million views.</div>
+          <div class="fd-tlink">Watch the series &rarr;</div>
+        </a>
+        <a class="fd-tcard" href="https://www.youtube.com/watch?v=tsSHq7Ul7EY&amp;t=27s" target="_blank" rel="noopener">
+          <div class="fd-tkind">TEDx &middot; Kalamassery</div>
+          <div class="fd-ttitle">Solitude Thinking: An Entrepreneur Drawing Inspiration from Art</div>
+          <div class="fd-tdesc">Listed among the top 35 most-viewed TEDx talks released on YouTube in 2021, with over a million views.</div>
+          <div class="fd-tlink">Watch the talk &rarr;</div>
+        </a>
       </div>
     </div>
   </section>
