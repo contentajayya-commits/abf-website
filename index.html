@@ -1279,6 +1279,12 @@ footer {
   .fd-pgrid,.fd-fgrid,.fd-tgrid{grid-template-columns:1fr}
   .fd-stats{grid-template-columns:repeat(2,auto);gap:1.5rem}
 }
+.fd-collage-img{border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md)}
+.fd-collage-img img{display:block;width:100%;height:auto}
+.fd-figure{margin:0}
+.fd-figure img{display:block;width:100%;height:auto;border-radius:var(--radius-md);box-shadow:var(--shadow-md)}
+.fd-figcap{display:block;margin-top:1rem;font-family:var(--ff-display);font-size:1.05rem;font-style:italic;color:var(--slate);line-height:1.5}
+.fd-figcap-attr{display:block;margin-top:0.6rem;font-family:var(--ff-mono);font-size:0.66rem;font-style:normal;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-dark)}
 </style>
 </head>
 <body>
@@ -1336,11 +1342,8 @@ footer {
             <div class="fd-stat"><div class="fd-stat-num">100%</div><div class="fd-stat-lbl">Editorially Independent</div></div>
           </div>
         </div>
-        <div class="fd-collage">
-          <div class="fd-pale"></div>
-          <div class="fd-pf fd-c1"><div class="fd-note">PHOTO<br>Event / keynote</div></div>
-          <div class="fd-pf fd-c2"><div class="fd-note">PHOTO<br>Arts / performance</div></div>
-          <div class="fd-pf teal fd-c3"><div class="fd-note">PHOTO<br>Architecture</div></div>
+        <div class="fd-collage-img">
+          <img src="hero-collage.jpg" alt="India's future â€” research, industry, and institutions" loading="lazy">
         </div>
       </div>
     </div>
@@ -1367,9 +1370,10 @@ footer {
         </div>
       </div>
       <div class="fd-art">
-        <div class="fd-quote-card">
-          <div class="fd-quote">"India's greatness will not be measured only by its GDP &mdash; but by the quality of its children's dreams and the dignity of its last citizen."<span class="fd-quote-attr">&mdash; Dr Ajayya Kumar, Founder</span></div>
-        </div>
+        <figure class="fd-figure">
+          <img src="who-we-are.jpg" alt="Ideas, research, dialogue, action â€” building institutions, shaping India" loading="lazy">
+          <figcaption class="fd-figcap">"India's greatness will not be measured only by its GDP &mdash; but by the quality of its children's dreams and the dignity of its last citizen."<span class="fd-figcap-attr">&mdash; Dr Ajayya Kumar, Founder</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -1384,11 +1388,8 @@ footer {
         <div class="fd-actions"><button class="fd-btn" onclick="showPage('about')">Who We Are</button></div>
       </div>
       <div class="fd-art fd-vb">
-        <div class="fd-stmt-collage">
-          <div class="fd-pale"></div>
-          <div class="fd-pf fd-p1"><div class="fd-note">PHOTO &mdash; roundtable</div></div>
-          <div class="fd-pf teal fd-p2"><div class="fd-note">PHOTO &mdash; speaker</div></div>
-          <div class="fd-pf fd-p3"><div class="fd-note">PHOTO &mdash; detail</div></div>
+        <div class="fd-collage-img">
+          <img src="ifl-collage.jpg" alt="India Future Labs â€” deep research and collaborative thinking" loading="lazy">
         </div>
       </div>
     </div>
