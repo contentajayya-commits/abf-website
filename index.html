@@ -1285,6 +1285,7 @@ footer {
 .fd-figure img{display:block;width:100%;height:auto;border-radius:var(--radius-md);box-shadow:var(--shadow-md)}
 .fd-figcap{display:block;margin-top:1rem;font-family:var(--ff-display);font-size:1.05rem;font-style:italic;color:var(--slate);line-height:1.5}
 .fd-figcap-attr{display:block;margin-top:0.6rem;font-family:var(--ff-mono);font-size:0.66rem;font-style:normal;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-dark)}
+.fd-pcard .fd-pimg img{display:block;width:100%;height:100%;object-fit:cover}
 </style>
 </head>
 <body>
@@ -1404,12 +1405,12 @@ footer {
         <p class="fd-sub" style="margin-top:1rem;max-width:38rem">India Future Labs is organised around six foundational research programmes. Fellows are assigned to one programme per cohort.</p>
       </div>
       <div class="fd-pgrid">
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">01 / Programme</div><div class="fd-pname">Economic Architecture for the $5 Trillion India</div><div class="fd-pdesc">Fiscal policy, industrial strategy, trade architecture, financial inclusion, and the institutional reforms required to sustain 8%+ GDP growth.</div></div>
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">02 / Programme</div><div class="fd-pname">Technology Sovereignty &amp; Digital Futures</div><div class="fd-pdesc">AI governance, semiconductor strategy, digital public infrastructure, and cyber sovereignty &mdash; India's technology imperatives for the next two decades.</div></div>
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">03 / Programme</div><div class="fd-pname">Human Capital: Education, Health &amp; Skills</div><div class="fd-pdesc">The education reforms, healthcare architectures, and skills pipelines needed to fully realise India's greatest asset &mdash; its people.</div></div>
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">04 / Programme</div><div class="fd-pname">Infrastructure, Urbanisation &amp; Climate Resilience</div><div class="fd-pdesc">India's cities will house 800 million people by 2050. Designing the physical and institutional infrastructure to make that urbanisation a strength.</div></div>
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">05 / Programme</div><div class="fd-pname">India's Global Role: Foreign Policy &amp; Soft Power</div><div class="fd-pdesc">Deploying civilisational heritage, democratic values, and strategic location to lead in a multipolar world. A programme for those who think in decades.</div></div>
-        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><div class="fd-note">IMAGE</div></div><div class="fd-pnum">06 / Programme</div><div class="fd-pname">Cultural Renaissance: Art, Sport &amp; National Identity</div><div class="fd-pdesc">A developed nation is not defined by GDP alone. The cultural, artistic, and sporting renaissance that must accompany India's economic rise.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-01.jpg" alt="Economic architecture for a $5 trillion India"></div><div class="fd-pnum">01 / Programme</div><div class="fd-pname">Economic Architecture for the $5 Trillion India</div><div class="fd-pdesc">Fiscal policy, industrial strategy, trade architecture, financial inclusion, and the institutional reforms required to sustain 8%+ GDP growth.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-02.jpg" alt="Technology sovereignty and digital futures"></div><div class="fd-pnum">02 / Programme</div><div class="fd-pname">Technology Sovereignty &amp; Digital Futures</div><div class="fd-pdesc">AI governance, semiconductor strategy, digital public infrastructure, and cyber sovereignty &mdash; India's technology imperatives for the next two decades.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-03.jpg" alt="Human capital: education, health and skills"></div><div class="fd-pnum">03 / Programme</div><div class="fd-pname">Human Capital: Education, Health &amp; Skills</div><div class="fd-pdesc">The education reforms, healthcare architectures, and skills pipelines needed to fully realise India's greatest asset &mdash; its people.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-04.jpg" alt="Infrastructure, urbanisation and climate resilience"></div><div class="fd-pnum">04 / Programme</div><div class="fd-pname">Infrastructure, Urbanisation &amp; Climate Resilience</div><div class="fd-pdesc">India's cities will house 800 million people by 2050. Designing the physical and institutional infrastructure to make that urbanisation a strength.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-05.jpg" alt="India's global role: foreign policy and soft power"></div><div class="fd-pnum">05 / Programme</div><div class="fd-pname">India's Global Role: Foreign Policy &amp; Soft Power</div><div class="fd-pdesc">Deploying civilisational heritage, democratic values, and strategic location to lead in a multipolar world. A programme for those who think in decades.</div></div>
+        <div class="fd-pcard" onclick="showPage('ifl')"><div class="fd-pimg"><img src="pillar-06.jpg" alt="Cultural renaissance: art, sport and national identity"></div><div class="fd-pnum">06 / Programme</div><div class="fd-pname">Cultural Renaissance: Art, Sport &amp; National Identity</div><div class="fd-pdesc">A developed nation is not defined by GDP alone. The cultural, artistic, and sporting renaissance that must accompany India's economic rise.</div></div>
       </div>
     </div>
   </section>
@@ -2050,7 +2051,7 @@ footer {
      ════════════════════════════════════════════════════════════ -->
 <div id="page-ifl" class="page">
   <div style="padding-top:var(--nav-h)"></div>
-  <section class="ifl-section" style="padding:calc(var(--nav-h) + 2rem) 0 var(--space-xl); min-height:500px;">
+  <section class="ifl-section" style="padding:calc(var(--nav-h) + 2rem) 0 var(--space-xl); min-height:500px; background-image:linear-gradient(to right, rgba(9,26,56,0.97) 0%, rgba(9,26,56,0.90) 40%, rgba(9,26,56,0.55) 75%, rgba(9,26,56,0.35) 100%), url('ifl-collage.jpg'); background-size:cover; background-position:center right;">
     <div class="ifl-bg-orb"></div>
     <div class="container ifl-content">
       <div style="max-width:750px">
